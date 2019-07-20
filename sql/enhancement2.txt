@@ -1,0 +1,15 @@
+Tony Stark
+
+1. INSERT INTO clients (clientFirstname, clientLastname, clientEmail, clientPassword, comments) 
+VALUES ("Tony", "Stark", "tony@starkent.com","Iam1ronM@n","I am the real Ironman")
+
+2. UPDATE clients SET clientLevel = "3" WHERE clientId = 1
+
+3. UPDATE inventory SET invName = "Climbing Rope", invDescription = replace(invDescription, "nylon rope", "climbing rope") WHERE invID = 15;
+
+4. SELECT inv.invName, cat.categoryName 
+FROM inventory inv  
+INNER JOIN categories cat ON inv.categoryID = cat.categoryID 
+WHERE cat.categoryID = 3 
+
+5. DELETE FROM inventory WHERE invID = 7

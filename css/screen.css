@@ -1,0 +1,448 @@
+@import url('normalize.css');
+
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+html{
+    box-sizing: border-box;
+    }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+    }
+
+body{
+    //font-family:'Roboto', sans-serif;
+    font-size:20px;
+    background-image:url("/acme/images/site/background.jpg");
+    background-size:cover;
+    font-family:'Acme',  sans-serif;
+    }
+
+#productsDisplay th, td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid black;
+        border-collapse: collapse;
+
+}
+
+#prod-display{
+    flex-flow: row wrap;
+    justify-content: flex-start;
+   }
+   
+   #prod-display li{
+    max-width: 200px;
+    flex: 1 0 auto;
+    text-align: center;
+    max-height: 400px;
+   }
+
+.rightLink {
+    margin-right: 20px;
+}
+
+#productsDisplay tr:nth-child(even) {background-color: #f2f2f2;}
+
+#content-area{
+    background-color: white;
+    margin: 0 auto;
+}
+
+h1, h3, h4, h5, h6{
+    font-family: 'Acme',  sans-serif;
+    color: #2C2C2C;
+    }
+
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 2.3em;
+}
+
+h3{
+    font-size: 1.7em;
+}
+
+main{
+    display: block;
+}
+
+.hide{
+    display: none;
+    }
+
+.show{
+    display: block;
+    }
+
+nav{
+    background-color: #de2226;
+}
+
+nav ul{
+    list-style: none;
+    font-size: .7em;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    //flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3233;
+    }
+
+nav a{
+    padding: 5px 17px;
+    color: white;
+    font-size: 1.3em;
+    display: block;
+    }
+
+nav li{
+    display: block;
+}
+
+nav li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    //padding: 14px 16px;
+    }
+
+nav li a:hover {
+        background-color: white;
+        color: black;
+      }
+
+
+footer{
+    border-top: 1px solid;
+    padding: 20px;
+    text-align: center;
+    font-size: .6em;
+    color: gray;
+}
+
+#main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#rocket-img{
+    background-image: url(/acme/images/site/rocketfeature.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header span{
+    margin-right: .5em;
+    font-size: smaller; 
+}
+
+#register-button{
+    background-color: red;
+    width: 80px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 0px;
+}
+
+#register-button1{
+    background-color: red;
+    width: 120px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 0px;
+}
+
+#register-button2{
+    background-color: red;
+    width: 120px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 0px;
+}
+
+#login-button{
+    background-color: red;
+    width: 80px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 0px;
+}
+
+#create-account-button{
+    background-color: red;
+    width: 350px;
+    color: white;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#folder{
+    width: 40px;
+}
+
+#myAccount{
+    display: flex;
+    float: right;
+    size: 50px;
+
+}
+
+#home{
+    width: 100%;
+}
+
+#rocket-feat{
+    margin-right: 10%;
+}
+
+#rocket-feat li{
+    list-style: none;
+    color: #990033;
+}
+
+#rocket-feat h2{
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 8px;
+}
+
+#actionbtn {
+    margin-top: 20px;
+}
+
+#bottom-content{
+    display: block;
+    flex-direction: row-reverse;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+#password-phrase{
+    font-size: 14px;
+    font-style: italic;
+}
+
+#rocket-reviews{
+    margin-left: 10%;
+}
+
+#recipes{
+    margin-left: 10%;
+}
+
+#prod-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#prod-desc{
+    margin-left: 5%;
+}
+
+#prod-img{
+    width: 150%;
+    height: 150%;
+    margin-bottom: 7%;
+}
+
+#description{
+    margin-top: 0;
+}
+
+#price{
+    font-size: 1.5em;
+    color: #de2226;
+    font-weight: 700;
+    line-height: 3em;
+}
+
+.no-space{
+    margin: 5px 0;
+}
+
+#site-logo{
+    margin: 15px 0 0 15px;
+    max-width: 90%;
+    }
+
+#content-area{
+    max-width: 90%;
+}   
+
+main{
+    margin: 0 15px;
+}
+
+#prod-details{
+    display: flex;
+    flex-direction: column;
+}
+
+#p1-details {
+    margin-top: 0px;
+}
+
+#details-bottom {
+    max-width : 350px;
+    word-wrap: break-word;
+    padding-left: 0px;
+    min-width: 300 px;
+
+}
+
+#prod-details {
+    width: 90%;
+    margin: auto;
+}
+
+#price-category{
+    font-size: 15px;
+}
+
+#priceDetails{
+    font-size: 50px;
+    color: red;
+
+}
+
+#prod-thumbnails {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;           
+    justify-content: space-between;
+}
+
+#prod-thumbnails li{
+    
+    text-decoration: none;           
+    
+}
+
+@media only screen AND (min-width: 1100px){
+
+
+    #site-logo{
+        margin: 15px 0 0 45px;
+        max-width: 100%;
+        }
+
+    .site-brand{
+        margin: 15px 0 0 10px;
+        }
+
+
+    #content-area{
+        max-width: 80%;
+        } 
+
+
+    main{
+        margin: 0 45px;
+        }    
+
+    nav {
+        position: relative;
+        /* width: 80%; */
+        margin: 15px 0;
+        }
+
+    nav ul{
+        justify-content: flex-start;
+        }
+
+    nav li{
+        color: white;
+        padding: 15px 0px 15px 45px;
+        }
+    #bottom-content{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+
+    #prod-display{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+       }
+    #prod-display a{
+        color: black;
+        text-decoration: none;
+       }
+    
+       #prod-thumbnails{
+           display: flex;
+           flex-direction: row;
+           text-decoration: none;           
+       }
+       
+       #prod-display li{
+        font-size: 10px;
+        margin-bottom: .5em;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+       }
+
+       .priceCategory{
+           font-size: 25px;
+       }
+                       
+       #prod-display li img{
+        width: 100%;
+        height: 200px;
+       }
+
+    #prod-details{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #details-bottom {
+        max-width : 350px;
+        word-wrap: break-word;
+        padding-left: 30px;
+    
+    }
+
+    #priceDetails{
+        font-size: 50px;
+        color: red;
+    }
+
+    }
