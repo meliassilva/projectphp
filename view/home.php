@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Acme, Inc.</title>
-    <meta name="author" content="Lucas Mayer de Freitas">
+    <meta name="author" content="Mario Elias da Silva Filho">
     <link rel="stylesheet" href="/acme/css/screen.css" media="screen" type="text/css">
 </head>
 <body>
